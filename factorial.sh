@@ -1,8 +1,10 @@
-echo Enter number 
-read a;
-b=1;
-for(( i=1 ; i <= a ; i++ ))
-do
-b=` expr $b * $i `;
-done
+echo Enter the number to find its factorial
+read num;
+b=1
+i=1
+while [ $i -le $num ]
+    do 
+    b=` expr $i \* $b `
+    i=` expr $i + 1 `
+    done
 echo $b
