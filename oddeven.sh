@@ -1,9 +1,9 @@
-echo "Enter number";
-read user_val;
-res_val=` expr $user_val % 2 `;
-if [ $res_val -eq 0 ]
+echo Even or not
+read num;
+val=` expr $num % 2`
+if [ $val = 0 ]
 then
-echo Even
+    echo Even
 else
-echo Odd
+    echo Odd
 fi
